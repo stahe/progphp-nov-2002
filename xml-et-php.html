@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -670,9 +670,9 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">&lt;/simulations&gt;</span>
 </code></pre></div>
 <p>Si on le visualise avec IE 6, on obtient le résultat suivant :</p>
-<p><img src="images/100000000000022900000087517AD5B3.png" style="width:14.63cm;height:3.572cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022900000087517AD5B3.png" /></p>
+<p><img src="images/100000000000022900000087517AD5B3.png" width="553" height="135" style="width:14.63cm;height:3.572cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022900000087517AD5B3.png" /></p>
 <p>IE6 reconnaît qu&#x27;il a affaire à un fichier XML (grâce au suffixe .xml du fichier) et le met en page d&#x27;une façon qui lui est propre. Avec Netscape on obtient une page vide. Cependant si on regarde le code source (View/Source) on a bien le fichier XML d&#x27;origine :</p>
-<p><img src="images/10000000000002450000008DA1C6A883.png" style="width:15.371cm;height:3.731cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002450000008DA1C6A883.png" /></p>
+<p><img src="images/10000000000002450000008DA1C6A883.png" width="581" height="141" style="width:15.371cm;height:3.731cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002450000008DA1C6A883.png" /></p>
 <p>Pourquoi Netscape n&#x27;affiche-t-il rien ? Parce qu&#x27;il lui faut une feuille de style qui lui dise comment transformer le fichier XML en fichier HTML qu&#x27;il pourra alors afficher. Il se trouve que IE 6 a lui une feuille de style par défaut lorsque le fichier XML n&#x27;en propose pas ce qui était le cas ici. </p>
 <p>Il existe un langage appelé <strong>XSL</strong> (eXtensible StyleSheet Language) permettant de décrire les transformations à effectuer pour passer un fichier XML en un fichier texte quelconque. XSL permet l&#x27;utilisation de nombreuses instructions et ressemble fort aux langages de programmation. Nous le détaillerons pas ici car il y faudrait plusieurs dizaines de pages. Nous allons simplement décrire deux exemples de feuilles de style XSL. La première est celle qui va transformer le fichier XML <strong>simulations.xml</strong> en code HTML. On modifie ce dernier afin qu&#x27;il désigne la feuille de style que pourront utiliser les navigateurs pour le transformer en document HTML qu&#x27;ils pourront afficher :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;windows-1252&quot;?&gt;</span>
@@ -686,9 +686,9 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;simulations.xsl&quot;?&gt;</span>
 </code></pre></div>
 <p>désigne le fichier <strong>simulations.xsl</strong> comme un feuille de style (<strong>xml-stylesheet</strong>) de type <strong>text/xsl</strong> c.a.d. un fichier texte contenant du code XSL. Cette feuille de style sera utilisée par les navigateurs pour transformer le texte XML en document HTML. Voici le résultat obtenu avec Netscape 7 lorsqu&#x27;on charge le fichier XML <strong>simulations.xml</strong> :</p>
-<p><img src="images/1000000000000178000000D0ADCAE6E2.png" style="width:9.947cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000178000000D0ADCAE6E2.png" /></p>
+<p><img src="images/1000000000000178000000D0ADCAE6E2.png" width="376" height="208" style="width:9.947cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000178000000D0ADCAE6E2.png" /></p>
 <p>Lorsque nous regardons le code source du document (View/Source) nous retrouvons le document XML initial et non le document HTML affiché :</p>
-<p><img src="images/10000000000002440000009B40F772B9.png" style="width:15.344cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002440000009B40F772B9.png" /></p>
+<p><img src="images/10000000000002440000009B40F772B9.png" width="580" height="155" style="width:15.344cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002440000009B40F772B9.png" /></p>
 <p>Netscape a utilisé la feuille de style <strong>simulations.xsl</strong> pour transformer le document XML ci-dessus en document HTML affichable. Il est maintenant temps de regarder le contenu de cette feuille de style :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;windows-1252&quot;?&gt;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&lt;xsl:stylesheet</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="w"> </span><span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="nt">&gt;</span>
@@ -893,7 +893,7 @@
 <a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="nt">&lt;/simulations&gt;</span>
 </code></pre></div>
 <p>lu par un navigateur récent (ici Netscape 7) est alors affiché comme suit :</p>
-<p><img src="images/1000000000000178000000D0ADCAE6E2.png" style="width:9.947cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000178000000D0ADCAE6E2.png" /></p>
+<p><img src="images/1000000000000178000000D0ADCAE6E2.png" width="376" height="208" style="width:9.947cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000178000000D0ADCAE6E2.png" /></p>
 <h2 id="52-application-impots-version-5">5.2. Application impôts : version 5</h2>
 <h3 id="521-les-fichiers-xml-et-feuilles-de-style-xsl-de-lapplication-impots">5.2.1. Les fichiers XML et feuilles de style XSL de l&#x27;application impôts</h3>
 <p>Revenons à notre point de départ qui était l&#x27;application web <strong>impôts</strong> et rappelons que nous voulons la modifier afin que la réponse faite aux clients soit une réponse au format XML plutôt qu&#x27;une réponse HTML. Cette réponse HTML sera accompagnée d&#x27;une feuille de style XSL afin que les navigateurs puissent l&#x27;afficher. Dans le paragraphe précédent, nous avons présenté :</p>
@@ -960,10 +960,10 @@
 <a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Le fichier <strong>erreurs.xml</strong> accompagné de sa feuille de style est affiché par un navigateur de la façon suivante :</p>
-<p><img src="images/1000000000000247000000CA81F9A71B.png" style="width:15.423cm;height:5.345cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000247000000CA81F9A71B.png" /></p>
+<p><img src="images/1000000000000247000000CA81F9A71B.png" width="583" height="202" style="width:15.423cm;height:5.345cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000247000000CA81F9A71B.png" /></p>
 <h3 id="522-lapplication-xmlsimulations">5.2.2. L&#x27;application xmlsimulations</h3>
 <p>Nous créons un fichier <strong>xmlsimulations.html</strong> que nous mettons dans le répertoire de l&#x27;application <strong>impots</strong>. La page visualisée est la suivante :</p>
-<p><img src="images/10000000000001B1000000CE09F9513D.png" style="width:11.455cm;height:5.45cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B1000000CE09F9513D.png" /></p>
+<p><img src="images/10000000000001B1000000CE09F9513D.png" width="433" height="206" style="width:11.455cm;height:5.45cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B1000000CE09F9513D.png" /></p>
 <p>Ce document HTML est un document <strong>statique</strong>. Son code est le suivant :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1215,13 +1215,13 @@
 </code></pre></div>
 <p>Ce code permet à partir du dictionnaire <em>$requête</em> de générer du code XML analogue au suivant :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
-<span class="odt-code-line">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;<span style="background-color:#ffe994">simulations.xsl</span>&quot; ?&gt;</span>
-<span class="odt-code-line">&lt;simulations&gt;</span>
-<span class="odt-code-line">&lt;simulation marie=&quot;non&quot; enfants=&quot;3&quot; salaire=&quot;200000&quot; impot=&quot;22504&quot; /&gt;</span>
-<span class="odt-code-line">&lt;simulation marie=&quot;oui&quot; enfants=&quot;3&quot; salaire=&quot;200000&quot; impot=&quot;16400&quot; /&gt;</span>
-<span class="odt-code-line">&lt;simulation marie=&quot;oui&quot; enfants=&quot;2&quot; salaire=&quot;200000&quot; impot=&quot;22504&quot; /&gt;</span>
-<span class="odt-code-line">&lt;/simulations&gt;</span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;<span style="background-color:#ffe994">simulations.xsl</span>&quot; ?&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;simulations&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;simulation marie=&quot;non&quot; enfants=&quot;3&quot; salaire=&quot;200000&quot; impot=&quot;22504&quot; /&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;simulation marie=&quot;oui&quot; enfants=&quot;3&quot; salaire=&quot;200000&quot; impot=&quot;16400&quot; /&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;simulation marie=&quot;oui&quot; enfants=&quot;2&quot; salaire=&quot;200000&quot; impot=&quot;22504&quot; /&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;/simulations&gt;</span></span>
 </code></pre></div>
 
 <p>La feuille de style <em>simulations.xsl</em>  transformera ce code XML en code HTML.</p>
@@ -1253,9 +1253,9 @@
 </code></pre></div>
 <p>La feuille de style <em>erreurs.xsl</em>  transformera ce code XML en code HTML.</p>
 <p>Voyons un premier exemple :</p>
-<p><img src="images/1000000000000181000000D5F3D60F9A.png" style="width:10.185cm;height:5.636cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000D5F3D60F9A.png" /></p>
+<p><img src="images/1000000000000181000000D5F3D60F9A.png" width="385" height="213" style="width:10.185cm;height:5.636cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000D5F3D60F9A.png" /></p>
 <p>Le SGBD MySQL n&#x27;est pas lancé. On reçoit alors la réponse suivante :</p>
-<p><img src="images/1000000000000286000000C83CA459ED.png" style="width:17.09cm;height:5.292cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000286000000C83CA459ED.png" /></p>
+<p><img src="images/1000000000000286000000C83CA459ED.png" width="646" height="200" style="width:17.09cm;height:5.292cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000286000000C83CA459ED.png" /></p>
 <p>Si on regarde le code source reçu par le navigateur, on a la chose suivante :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
 <a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="cp">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;erreurs.xsl&quot; ?&gt;</span>
@@ -1264,7 +1264,7 @@
 <a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="nt">&lt;/erreurs&gt;</span>
 </code></pre></div>
 <p>Maintenant, nous lançons le SGBD MySQL et faisons différentes simulations successives. Nous obtenons la réponse suivante :</p>
-<p><img src="images/10000000000001A200000105EBD0ECBD.png" style="width:11.058cm;height:6.906cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A200000105EBD0ECBD.png" /></p>
+<p><img src="images/10000000000001A200000105EBD0ECBD.png" width="418" height="261" style="width:11.058cm;height:6.906cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A200000105EBD0ECBD.png" /></p>
 <p>Le code reçu par le navigateur est le suivant :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
 <a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="cp">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;simulations.xsl&quot; ?&gt;</span>
@@ -1279,8 +1279,8 @@
 <h2 id="53-analyse-dun-document-xml-en-php">5.3. Analyse d&#x27;un document XML en PHP</h2>
 <p>La prochaine version de notre application <strong>impots</strong> va être un client programmé de l&#x27;application précédente <em>xmlsimulations</em>. Notre client va donc recevoir du code XML qu&#x27;il devra analyser pour en retirer les informations qui l&#x27;intéresse. Nous allons faire ici une pause dans nos différentes versions et apprendre comment on peut analyser un document XML en PHP. Nous le ferons à partir de l&#x27;exemple suivant : </p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php</span></span>
-<span class="odt-code-line">syntaxe : xmlParser.php fichierXML</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">syntaxe : xmlParser.php fichierXML</span></span>
 </code></pre></div>
 
 <p>L&#x27;application <em>xmlParser.php</em> admet un paramètre : l&#x27;URI (Uniform Resource Identifier) du document XML à analyser. Dans notre exemple, cette URI sera simplement le nom d&#x27;un fichier XML placé dans le répertoire de l&#x27;application <em>xmlParser.php</em>. Considérons deux exemples d&#x27;exécution. Dans le premier exemple, le fichier XML analysé est le fichier <strong>erreurs.xml</strong> suivant :</p>
@@ -1293,15 +1293,15 @@
 </code></pre></div>
 <p>L&#x27;analyse donne les résultats suivants :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php erreurs.xml</span></span>
-<span class="odt-code-line">ERREURS</span>
-<span class="odt-code-line"> ERREUR</span>
-<span class="odt-code-line">  [erreur 1]</span>
-<span class="odt-code-line"> /ERREUR</span>
-<span class="odt-code-line"> ERREUR</span>
-<span class="odt-code-line">  [erreur 2]</span>
-<span class="odt-code-line"> /ERREUR</span>
-<span class="odt-code-line">/ERREURS</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php erreurs.xml</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">ERREURS</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> ERREUR</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  [erreur 1]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> /ERREUR</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> ERREUR</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  [erreur 2]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> /ERREUR</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">/ERREURS</span></span>
 </code></pre></div>
 
 <p>Nous n&#x27;avions pas encore écrit ce que faisait l&#x27;application <em>xmlParser.php</em> mais l&#x27;on voit ici qu&#x27;elle affiche la structure du document XML analysé. Le second exemple analyse le fichier XML <strong>simulations.xml</strong> suivant :</p>
@@ -1314,13 +1314,13 @@
 </code></pre></div>
 <p>L&#x27;analyse donne les résultats suivants :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php simulations.xml</span></span>
-<span class="odt-code-line">SIMULATIONS</span>
-<span class="odt-code-line"> SIMULATION,(MARIE,oui) (ENFANTS,2) (SALAIRE,200000) (IMPOT,22504)</span>
-<span class="odt-code-line"> /SIMULATION</span>
-<span class="odt-code-line"> SIMULATION,(MARIE,non) (ENFANTS,2) (SALAIRE,200000) (IMPOT,33388)</span>
-<span class="odt-code-line"> /SIMULATION</span>
-<span class="odt-code-line">/SIMULATIONS</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe xmlParser.php simulations.xml</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">SIMULATIONS</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> SIMULATION,(MARIE,oui) (ENFANTS,2) (SALAIRE,200000) (IMPOT,22504)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> /SIMULATION</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> SIMULATION,(MARIE,non) (ENFANTS,2) (SALAIRE,200000) (IMPOT,33388)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> /SIMULATION</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">/SIMULATIONS</span></span>
 </code></pre></div>
 
 <p>L&#x27;application <em>xmlParser.php</em> contient tout ce dont nous avons besoin dans notre application <strong>impots</strong> puisqu&#x27;elle a été capable de retrouver soit les erreurs soit les simulations que pourrait envoyer le serveur web. Examinons son code :</p>
@@ -1669,23 +1669,23 @@
 </code></pre></div>
 <p>Puis avec le SGBD lancé :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;e:\php43\php.exe <span style="background-color:#ffe994">cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php oui 3 200000</span></span>
-<span class="odt-code-line">Jeton de session=[<span style="background-color:#ffe994">69a54d79db10b70ed0a2d55d5026ac8b</span>]</span>
-<span class="odt-code-line">Simulations :</span>
-<span class="odt-code-line">[oui,3,200000,16400]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">dos &gt;<span style="background-color:#ffe994">e:\php43\php.exe cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php oui 2 200000 69a54d79db10b70ed0a2d55d5026ac8b</span></span>
-<span class="odt-code-line">Jeton de session=[69a54d79db10b70ed0a2d55d5026ac8b]</span>
-<span class="odt-code-line">Simulations :</span>
-<span class="odt-code-line">[oui,3,200000,16400]</span>
-<span class="odt-code-line">[oui,2,200000,22504]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">dos &gt;<span style="background-color:#ffe994">e:\php43\php.exe cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php non 2 200000 69a54d79db10b70ed0a2d55d5026ac8b</span></span>
-<span class="odt-code-line">Jeton de session=[69a54d79db10b70ed0a2d55d5026ac8b]</span>
-<span class="odt-code-line">Simulations :</span>
-<span class="odt-code-line">[oui,3,200000,16400]</span>
-<span class="odt-code-line">[oui,2,200000,22504]</span>
-<span class="odt-code-line">[non,2,200000,33388]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;e:\php43\php.exe <span style="background-color:#ffe994">cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php oui 3 200000</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[<span style="background-color:#ffe994">69a54d79db10b70ed0a2d55d5026ac8b</span>]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Simulations :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,3,200000,16400]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos &gt;<span style="background-color:#ffe994">e:\php43\php.exe cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php oui 2 200000 69a54d79db10b70ed0a2d55d5026ac8b</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[69a54d79db10b70ed0a2d55d5026ac8b]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Simulations :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,3,200000,16400]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,2,200000,22504]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos &gt;<span style="background-color:#ffe994">e:\php43\php.exe cltXmlSimulations.php http://localhost/poly/impots/8/xmlsimulations.php non 2 200000 69a54d79db10b70ed0a2d55d5026ac8b</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[69a54d79db10b70ed0a2d55d5026ac8b]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Simulations :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,3,200000,16400]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,2,200000,22504]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[non,2,200000,33388]</span></span>
 </code></pre></div>
 
 <h2 id="55-conclusion">5.5. Conclusion</h2>
@@ -1733,13 +1733,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>

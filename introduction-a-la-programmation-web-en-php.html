@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -856,11 +856,11 @@
 </code></pre></div>
 <p>L&#x27;exécution de ce programme se fait dans une fenêtre Dos de Windows :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos<span style="background-color:#ffe994">&gt;&quot;e:\program files\easyphp\php\php.exe&quot; coucou.php</span></span>
-<span class="odt-code-line">X-Powered-By: PHP/4.3.0-dev</span>
-<span class="odt-code-line">Content-type: text/html</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">coucou</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos<span style="background-color:#ffe994">&gt;&quot;e:\program files\easyphp\php\php.exe&quot; coucou.php</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">X-Powered-By: PHP/4.3.0-dev</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Content-type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">coucou</span></span>
 </code></pre></div>
 
 <p>On remarquera que l&#x27;interpréteur PHP envoie par défaut :</p>
@@ -999,7 +999,7 @@
 <a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Si nous demandons cette page avec un navigateur, nous obtenons le résultat suivant :</p>
-<p><img src="images/10000000000002690000010A6310693E.png" style="width:16.323cm;height:7.038cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002690000010A6310693E.png" /></p>
+<p><img src="images/10000000000002690000010A6310693E.png" width="617" height="266" style="width:16.323cm;height:7.038cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002690000010A6310693E.png" /></p>
 <p>La partie dynamique de la page a été générée par du code PHP :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="x">            </span><span class="cp">&lt;?php</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>              <span class="nv">$maintenant</span><span class="o">=</span><span class="nb">time</span><span class="p">();</span>
@@ -1034,7 +1034,7 @@
 <a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Le résultat obtenu dans le navigateur est identique :</p>
-<p><img src="images/10000000000002640000010479F19E9D.png" style="width:16.191cm;height:6.879cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002640000010479F19E9D.png" /></p>
+<p><img src="images/10000000000002640000010479F19E9D.png" width="612" height="260" style="width:16.191cm;height:6.879cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002640000010479F19E9D.png" /></p>
 <p>La seconde version est meilleure que la première car il y a moins de code PHP dans le code HTML. La structure de la page est ainsi plus visible. On peut aller plus loin en mettant le code PHP et le code HTML dans deux fichiers différents. Le code PHP est stocké dans le fichier <em>heure3.php</em> :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="x">&lt;!-- code PHP --&gt;</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="cp">&lt;?php</span>
@@ -1089,7 +1089,7 @@
 <a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Le résultat obtenu est le même qu&#x27;auparavant :</p>
-<p><img src="images/1000000000000263000000B5FF4E2AF1.png" style="width:16.164cm;height:4.789cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000263000000B5FF4E2AF1.png" /></p>
+<p><img src="images/1000000000000263000000B5FF4E2AF1.png" width="611" height="181" style="width:16.164cm;height:4.789cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000263000000B5FF4E2AF1.png" /></p>
 <p>La solution de mettre les codes PHP et HTML dans des fichiers différents sera adoptée par la suite. Elle présente divers avantages :</p>
 <ul>
   <li>la structure des pages envoyées au client n&#x27;est pas noyée dans du code PHP. Ainsi elles peuvent être maintenues par un &quot;web designer&quot; ayant des compétences graphiques mais peu de compétences en PHP.
@@ -1102,9 +1102,9 @@
 <h2 id="36-recuperer-les-parametres-envoyes-par-un-client-web">3.6. Récupérer les paramètres envoyés par un client web</h2>
 <h3 id="361-par-un-post">3.6.1. par un POST</h3>
 <p>Considérons le formulaire suivant où l&#x27;utilisateur doit donner deux informations : un nom et un age.</p>
-<p><img src="images/1000000000000181000000BED7266BD7.png" style="width:10.185cm;height:5.027cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000BED7266BD7.png" /></p>
+<p><img src="images/1000000000000181000000BED7266BD7.png" width="385" height="190" style="width:10.185cm;height:5.027cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000BED7266BD7.png" /></p>
 <p>Lorsque l&#x27;utilisateur a rempli les champs <em>Nom</em> et <em>Age</em>, il appuie ensuite sur le bouton <em>Envoyer</em> qui est de type <em>submit</em>. Les valeurs du formulaire sont alors envoyées au serveur. Celui-ci renvoie le formulaire avec de plus un tableau listant les valeurs qu&#x27;il a reçues :</p>
-<p><img src="images/10000000000001B70000013E0EACCC68.png" style="width:11.613cm;height:8.412cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B70000013E0EACCC68.png" /></p>
+<p><img src="images/10000000000001B70000013E0EACCC68.png" width="439" height="318" style="width:11.613cm;height:8.412cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B70000013E0EACCC68.png" /></p>
 <p>Le navigateur demande le formulaire à l&#x27;application <em>nomage.php</em> suivante :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="cp">&lt;?php</span>
 <a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  <span class="c1">// a-t-on les paramètres attendus ?</span>
@@ -1221,7 +1221,7 @@
 <a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>     <span class="cp">?&gt;</span>
 </code></pre></div>
 <p>A l&#x27;exécution, lorsque des valeurs sont saisies dans le formulaire et envoyées au serveur, le navigateur reflète dans son champ URL le fait que les valeurs ont été envoyées par la méthode GET :</p>
-<p><img src="images/100000000000021D0000002B03A2C246.png" style="width:14.312cm;height:1.138cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021D0000002B03A2C246.png" /></p>
+<p><img src="images/100000000000021D0000002B03A2C246.png" width="541" height="43" style="width:14.312cm;height:1.138cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021D0000002B03A2C246.png" /></p>
 <h2 id="37-recuperer-les-entetes-http-envoyes-par-un-client-web">3.7. Récupérer les entêtes HTTP envoyés par un client web</h2>
 <p>Lorsqu&#x27;un navigateur fait une demande à un serveur web, il lui envoie un certain nombre d&#x27;entêtes HTTP. Il est parfois intéresant d&#x27;avoir accès à ceux-ci. On peut s&#x27;aider dans un premier temps du tableau associatif $_SERVER. Celui-ci contient diverses informations qui lui sont données par le serveur web, dont entre-autres les entêtes HTTP fournis par le client. Considérons le programme suivant qui affiche toutes les valeurs du tableau $_SERVER :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="cp">&lt;?php</span>
@@ -1236,7 +1236,7 @@
 <a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="cp">?&gt;</span>
 </code></pre></div>
 <p>Sauvegardons ce code dans <em>headers.php</em> et demandons cette URL avec un navigateur :</p>
-<p><img src="images/1000000000000281000002410899FC62.png" style="width:16.958cm;height:15.265cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000281000002410899FC62.png" /></p>
+<p><img src="images/1000000000000281000002410899FC62.png" width="641" height="577" style="width:16.958cm;height:15.265cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000281000002410899FC62.png" /></p>
 <p>Nous récupérons un certain nombre d&#x27;informations dont les entêtes HTTP envoyés par le navigateur. Ceux-ci sont les valeurs associées aux clés commençant par HTTP. Détaillons certaines des informations obtenues ci-dessus :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>HTTP_ACCEPT
@@ -1294,7 +1294,7 @@
 <a id="__codelineno-47-12" name="__codelineno-47-12" href="#__codelineno-47-12"></a><span class="cp">?&gt;</span>
 </code></pre></div>
 <p>Le résultat obtenu dans le navigateur est le suivant :</p>
-<p><img src="images/1000000000000319000000CA67AB1B21.png" style="width:17.979cm;height:4.579cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000319000000CA67AB1B21.png" /></p>
+<p><img src="images/1000000000000319000000CA67AB1B21.png" width="680" height="173" style="width:17.979cm;height:4.579cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000319000000CA67AB1B21.png" /></p>
 <p>Si on veut un entête HTTP précis, on écrira par exemple <em>$_SERVER[&quot;HTTP_ACCEPT&quot;]</em>.</p>
 <h2 id="38-recuperer-des-informations-denvironnement">3.8. Récupérer des informations d&#x27;environnement</h2>
 <p>Le serveur web/php s&#x27;exécute dans un environnement qu&#x27;on peut connaître via le tableau <strong>$_ENV</strong> qui mémorise diverses caractéristiques de l&#x27;environnement d&#x27;exécution. Considérons l&#x27;application <em>env1.php</em> suivante :</p>
@@ -1310,14 +1310,14 @@
 <a id="__codelineno-48-10" name="__codelineno-48-10" href="#__codelineno-48-10"></a><span class="cp">?&gt;</span>
 </code></pre></div>
 <p>Elle donne le résultat suivant dans un navigateur (vue partielle) :</p>
-<p><img src="images/10000000000002D20000013879C78940.png" style="width:17.992cm;height:7.773cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D20000013879C78940.png" /></p>
+<p><img src="images/10000000000002D20000013879C78940.png" width="680" height="294" style="width:17.992cm;height:7.773cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D20000013879C78940.png" /></p>
 <p>On voit par exemple ci-dessus que le serveur web/php s&#x27;exécute sous l&#x27;OS Windows NT.</p>
 <h2 id="39-exemples">3.9. Exemples</h2>
 <h3 id="391-generation-dynamique-de-formulaire-1">3.9.1. Génération dynamique de formulaire - 1</h3>
 <p>Nous prenons comme exemple la génération d&#x27;un formulaire n&#x27;ayant qu&#x27;un contrôle : un combo. Le contenu de ce combo est construit dynamiquement avec des valeurs prises dans un tableau. Dans la réalité, elles sont souvent prises dans une base de données. Le formulaire est le suivant :</p>
-<p><img src="images/10000000000001F60000009B00B6D0D7.png" style="width:13.28cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F60000009B00B6D0D7.png" /></p>
+<p><img src="images/10000000000001F60000009B00B6D0D7.png" width="502" height="155" style="width:13.28cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F60000009B00B6D0D7.png" /></p>
 <p>Si sur l&#x27;exemple ci-dessus, on fait <em>Envoyer</em>, on obtient la réponse suivante : </p>
-<p><img src="images/10000000000001EE0000005E81390CAB.png" style="width:13.069cm;height:2.487cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EE0000005E81390CAB.png" /></p>
+<p><img src="images/10000000000001EE0000005E81390CAB.png" width="494" height="94" style="width:13.069cm;height:2.487cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EE0000005E81390CAB.png" /></p>
 <p>Le code HTML du formulaire initial, une fois celui-ci généré, est le suivant :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1406,9 +1406,9 @@
 <p>Ici, on se contente d&#x27;afficher la valeur de la variable <em>$choix</em> là aussi transmise par <em>valeurs.php</em>. </p>
 <h3 id="392-generation-dynamique-de-formulaire-2">3.9.2. Génération dynamique de formulaire - 2</h3>
 <p>Nous reprenons l&#x27;exemple précédent en le modifiant de la façon suivante. Le formulaire proposé est toujours le même :</p>
-<p><img src="images/10000000000002040000009BD5AE2366.png" style="width:13.651cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002040000009BD5AE2366.png" /></p>
+<p><img src="images/10000000000002040000009BD5AE2366.png" width="516" height="155" style="width:13.651cm;height:4.101cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002040000009BD5AE2366.png" /></p>
 <p>La réponse est elle différente :</p>
-<p><img src="images/100000000000020D000000E0EC1E7C02.png" style="width:13.889cm;height:5.927cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020D000000E0EC1E7C02.png" /></p>
+<p><img src="images/100000000000020D000000E0EC1E7C02.png" width="525" height="224" style="width:13.889cm;height:5.927cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020D000000E0EC1E7C02.png" /></p>
 <p>Dans la réponse, on renvoie le formulaire, le nombre choisi par l&#x27;utilisateur étant indiqué dessous. Par ailleurs, ce nombre est celui qui apparaît comme sélectionné dans la liste affichée par la réponse.</p>
 <p>Le code de <em>valeurs.php</em> est le suivant :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="cp">&lt;?php</span>
@@ -1529,39 +1529,39 @@
 </ul>
 
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-sql">
-<span class="odt-code-line">dos&gt; <span style="background-color:#ffe994">mysql --database=dbValeurs --user=admDbValeurs --password=mdpDbValeurs</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="background-color:#ffe994">show tables;</span></span>
-<span class="odt-code-line">+---------------------+</span>
-<span class="odt-code-line">| Tables_in_dbValeurs |</span>
-<span class="odt-code-line">+---------------------+</span>
-<span class="odt-code-line">| tvaleurs            |</span>
-<span class="odt-code-line">+---------------------+</span>
-<span class="odt-code-line">1 row in set (0.00 sec)</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="background-color:#ffe994">describe tvaleurs;</span></span>
-<span class="odt-code-line">+--------+---------+------+-----+---------+-------+</span>
-<span class="odt-code-line">| Field  | Type    | Null | Key | Default | Extra |</span>
-<span class="odt-code-line">+--------+---------+------+-----+---------+-------+</span>
-<span class="odt-code-line">| valeur | int(11) |      |     | 0       |       |</span>
-<span class="odt-code-line">+--------+---------+------+-----+---------+-------+</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="background-color:#ffe994">select * from tvaleurs;</span></span>
-<span class="odt-code-line">+--------+</span>
-<span class="odt-code-line">| valeur |</span>
-<span class="odt-code-line">+--------+</span>
-<span class="odt-code-line">|      0 |</span>
-<span class="odt-code-line">|      1 |</span>
-<span class="odt-code-line">|      2 |</span>
-<span class="odt-code-line">|      3 |</span>
-<span class="odt-code-line">|      4 |</span>
-<span class="odt-code-line">|      6 |</span>
-<span class="odt-code-line">|      5 |</span>
-<span class="odt-code-line">|      7 |</span>
-<span class="odt-code-line">|      8 |</span>
-<span class="odt-code-line">|      9 |</span>
-<span class="odt-code-line">+--------+</span>
-<span class="odt-code-line">10 rows in set (0.00 sec)</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt; <span style="background-color:#ffe994">mysql --database=dbValeurs --user=admDbValeurs --password=mdpDbValeurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="background-color:#ffe994">show tables;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| Tables_in_dbValeurs |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| tvaleurs            |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">1 row in set (0.00 sec)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="background-color:#ffe994">describe tvaleurs;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+---------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| Field  | Type    | Null | Key | Default | Extra |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+---------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| valeur | int(11) |      |     | 0       |       |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+---------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="background-color:#ffe994">select * from tvaleurs;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| valeur |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      0 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      1 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      2 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      3 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      4 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      6 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      7 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      8 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|      9 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">10 rows in set (0.00 sec)</span></span>
 </code></pre></div>
 
 <p>Dans une application utilisant une base de données, on trouvera généralement les étapes suivantes :</p>
@@ -1718,26 +1718,26 @@
   </li>
 </ul>
 
-<p><img src="images/1000000000000351000000A4614CBF9B.png" style="width:17.99cm;height:3.475cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000351000000A4614CBF9B.png" /></p>
+<p><img src="images/1000000000000351000000A4614CBF9B.png" width="680" height="131" style="width:17.99cm;height:3.475cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000351000000A4614CBF9B.png" /></p>
 <ul>
   <li>sans erreur
   </li>
 </ul>
 
-<p><img src="images/1000000000000201000000E1173F6DE4.png" style="width:13.571cm;height:5.953cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000201000000E1173F6DE4.png" /></p>
+<p><img src="images/1000000000000201000000E1173F6DE4.png" width="513" height="225" style="width:13.571cm;height:5.953cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000201000000E1173F6DE4.png" /></p>
 <h3 id="394-generation-dynamique-de-formulaire-4">3.9.4. Génération dynamique de formulaire - 4</h3>
 <p>Dans l&#x27;exemple précédent, que se passerait-il si on changeait de SGBD ? Si on passait de MySQL à Oracle ou SQL Server par exemple ? Il faudrait réécrire la fonction <em>getValeurs()</em> qui fournit les valeurs. L&#x27;intérêt d&#x27;avoir rassemblé le code nécessaire à la récupération des valeurs à afficher dans la liste dans une fonction est que le code à modifier est bien ciblé et non pas éparpillé dans tout le programme. La fonction <em>getValeurs()</em> peut être réécrite de façon à ce qu&#x27;elle soit indépendante du SGBD utilisé. Il suffit qu&#x27;elle travaille avec le pilote ODBC du SGBD plutôt que directement avec le SGBD.</p>
 <p>Il existe de nombreuses bases de données sur le marché. Afin d’uniformiser les accès aux bases de données sous MS Windows, Microsoft a développé une interface appelée ODBC (Open DataBase Connectivity). Cette couche cache les particularités de chaque base de données sous une interface standard. Il existe sous MS Windows de nombreux pilotes ODBC facilitant l’accès aux bases de données. Voici par exemple, une liste de pilotes ODBC installés sur une machine Windows : </p>
-<p><img src="images/10000000000001E10000017A8A50A132.png" style="width:12.725cm;height:9.999cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E10000017A8A50A132.png" /></p>
+<p><img src="images/10000000000001E10000017A8A50A132.png" width="481" height="378" style="width:12.725cm;height:9.999cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E10000017A8A50A132.png" /></p>
 <p>Le SGBD MySQL a lui aussi un pilote ODBC. Une application s’appuyant sur des pilotes ODBC peut utiliser n’importe quelle bases de données ci-dessus sans ré-écriture.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048B000000DB96BE416D.png" style="display:inline-block; margin:4px;width:15.386cm;height:2.898cm;" class="odt-zoomable" data-zoom-src="images/100000000000048B000000DB96BE416D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048B000000DB96BE416D.png" width="582" height="110" style="display:inline-block; margin:4px;width:15.386cm;height:2.898cm;" class="odt-zoomable" data-zoom-src="images/100000000000048B000000DB96BE416D.png" /></td></tr></table>
 
 <p>Rendons notre base MySQL <em>dbValeurs</em> accessible au travers d&#x27;un pilote ODBC. La procédure ci-dessous est celle de Windows 2000. Pour les systèmes Win9x, la procédure est très analogue. On active le gestionnaire de ressources ODBC :</p>
-<p><img src="images/10000000000001CA0000017772004398.png" style="width:12.116cm;height:9.92cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CA0000017772004398.png" /></p>
+<p><img src="images/10000000000001CA0000017772004398.png" width="458" height="375" style="width:12.116cm;height:9.92cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CA0000017772004398.png" /></p>
 <p>On utilise le bouton [Add] pour ajouter une nouvelle source de données ODBC :</p>
-<p><img src="images/100000000000013B000001566E5379FB.png" style="width:8.333cm;height:9.047cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000013B000001566E5379FB.png" /></p>
+<p><img src="images/100000000000013B000001566E5379FB.png" width="315" height="342" style="width:8.333cm;height:9.047cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000013B000001566E5379FB.png" /></p>
 <p>On sélectionne le pilote ODBC MySQL, on fait [Terminer] puis on donne les caractéristiques de la source de données :</p>
-<p><img src="images/10000000000001C0000001DA754691F7.png" style="width:11.852cm;height:12.539cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C0000001DA754691F7.png" /></p>
+<p><img src="images/10000000000001C0000001DA754691F7.png" width="448" height="474" style="width:11.852cm;height:12.539cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C0000001DA754691F7.png" /></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Windows DSN name 
 </code></pre></div>
@@ -1768,9 +1768,9 @@
 <a id="__codelineno-71-3" name="__codelineno-71-3" href="#__codelineno-71-3"></a><span class="w"> </span><span class="k">select</span>
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Le résultat d&#x27;un select est une table, donc un ensemble de lignes et de colonnes. Cette table est accessible via <b>$requêtePréparée</b>.</div><div style="margin:0 0 0.5em 0"><b>$res=odbc_fetch_row($requêtePréparée)</b> lit une ligne de la table résultat du <i>select</i>. Rend vrai ou faux selon que l&#x27;exécution de la requête réussit ou non. Les éléments de la ligne récupérée sont disponibles via la fonction <b>odbc_result</b> :</div><div style="margin:0 0 0.5em 0"><b>$val=odbc_result($requêtePréparée,i)</b> : colonne i de la ligne qui vien d&#x27;être lue</div><div style="margin:0 0 0.5em 0"><b>$val=odbc_result($requêtePréparée,&quot;nomColonne&quot;)</b> : colonne nomColonne de la ligne qui vient d&#x27;être lue</div><div style="margin:0 0 0.5em 0">La fonction <i>odbc_fetch_row</i> peut être appelée de façon répétée. A chaque fois, elle lit une nouvelle ligne de la table des résultats. Lorsque la fin de la table est atteinte, la fonction rend la valeur <i>false</i>. Ainsi la table <i>des résultats</i> peut-elle être exploitée de la façon suivante :</div><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">while(odbc_fetch_row($résultats)){</span>
-<span class="odt-code-line"><span style="font-style:italic">    </span><span style="font-style:italic">// traite la ligne courante avec odbc_result</span></span>
-<span class="odt-code-line">}//while</span>
+<span class="odt-code-line"><span class="odt-code-line-content">while(odbc_fetch_row($résultats)){</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-style:italic">// traite la ligne courante avec odbc_result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//while</span></span>
 </code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>fermeture de la 
 <a id="__codelineno-72-2" name="__codelineno-72-2" href="#__codelineno-72-2"></a>connexion
@@ -1816,16 +1816,16 @@
 <a id="__codelineno-73-36" name="__codelineno-73-36" href="#__codelineno-73-36"></a><span class="o">?&gt;</span>
 </code></pre></div>
 <p>Si on exécute la nouvelle application sans activer la base de données <em>odbc-valeurs</em>, on obtient le résultat suivant :</p>
-<p><img src="images/100000000000021300000087160A121E.png" style="width:14.048cm;height:3.572cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021300000087160A121E.png" /></p>
+<p><img src="images/100000000000021300000087160A121E.png" width="531" height="135" style="width:14.048cm;height:3.572cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021300000087160A121E.png" /></p>
 <p>On remarquera que le code d&#x27;erreur renvoyé par le pilote odbc (odbc_error()=S1000) est peu explicite. Si la base <em>odbc-valeurs</em> est rendue disponible, on obtient les mêmes résultats qu&#x27;auparavant.</p>
 <p>En conclusion, on peut dire que cette solution est bonne pour la maintenance de l&#x27;application. En effet, si la base de données doit changer, l&#x27;application n&#x27;aura elle pas à changer. L&#x27;administrateur système créera simplement une nouvelle source de données ODBC pour la nouvelle base. Toujours en vue de la maintenance, il serait bon de mettre les paramètres d&#x27;accès à la base ($dsn, $user, $pwd) dans un fichier séparé que l&#x27;application chargerait au démarrage (<em>include</em>).</p>
 <h3 id="395-recuperer-les-valeurs-dun-formulaire">3.9.5. Récupérer les valeurs d&#x27;un formulaire</h3>
 <p>Nous avons déjà à plusieurs reprises récupéré les valeurs d&#x27;un formulaire envoyées par un client web. L&#x27;exemple suivant montre un formulaire rassemblant les composants HTML les plus courants et s&#x27;applique à récupérer les paramètres envoyés par le navigateur client. Le formulaire est le suivant :</p>
-<p><img src="images/100000000000014A0000018ADF732AB9.png" style="width:8.729cm;height:10.423cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A0000018ADF732AB9.png" /></p>
+<p><img src="images/100000000000014A0000018ADF732AB9.png" width="330" height="394" style="width:8.729cm;height:10.423cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A0000018ADF732AB9.png" /></p>
 <p>Il arrive pré-rempli. Ensuite l&#x27;utilisateur peut le modifier :</p>
-<p><img src="images/100000000000014A00000189ACDFF583.png" style="width:8.729cm;height:10.396cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A00000189ACDFF583.png" /></p>
+<p><img src="images/100000000000014A00000189ACDFF583.png" width="330" height="393" style="width:8.729cm;height:10.396cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A00000189ACDFF583.png" /></p>
 <p>S&#x27;il appuie sur le bouton [Envoyer] le serveur lui renvoie la liste des valeurs du formulaire :</p>
-<p><img src="images/10000000000000A600000194B5ECAE91.png" style="width:4.392cm;height:10.687cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A600000194B5ECAE91.png" /></p>
+<p><img src="images/10000000000000A600000194B5ECAE91.png" width="166" height="404" style="width:4.392cm;height:10.687cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A600000194B5ECAE91.png" /></p>
 <p>Le formulaire est une page HTML statique <strong>balises.html</strong> :    </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-74-2" name="__codelineno-74-2" href="#__codelineno-74-2"></a>
@@ -2026,9 +2026,9 @@
   </li>
 </ul>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>  if($méthode==&quot;GET&quot;)
-<a id="__codelineno-87-2" name="__codelineno-87-2" href="#__codelineno-87-2"></a>      $param=$_GET;
-<a id="__codelineno-87-3" name="__codelineno-87-3" href="#__codelineno-87-3"></a>      else $param=$_POST;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a><span class="w">  </span><span class="k">if</span><span class="o">(</span><span class="nv">$méthode</span><span class="o">==</span><span class="s2">&quot;GET&quot;</span><span class="o">)</span>
+<a id="__codelineno-87-2" name="__codelineno-87-2" href="#__codelineno-87-2"></a><span class="w">      </span><span class="nv">$param</span><span class="o">=</span><span class="nv">$_GET</span><span class="p">;</span>
+<a id="__codelineno-87-3" name="__codelineno-87-3" href="#__codelineno-87-3"></a><span class="w">      </span><span class="k">else</span><span class="w"> </span><span class="nv">$param</span><span class="o">=</span><span class="nv">$_POST</span><span class="p">;</span>
 </code></pre></div>
 <ul>
   <li>à partir du contenu du champ areaSaisie &quot;ligne1\r\nligne2\r\n...&quot; on crée un tableau de chaînes par <i>explode(&quot;\r\n&quot;,$param[&quot;areaSaisie&quot;])</i>. On a donc le tableau <i>[ligne1,ligne2,...]</i>. A partir de celui-ci on crée la chaîne <i>&quot;ligne1&lt;br&gt;ligne2&lt;br&gt;...&quot;</i> avec la fonction <i>implode</i>.
@@ -2125,7 +2125,7 @@
 </ol>
 
 <p>Le problème posé est : comment le serveur fait-il pour conserver les informations I1 et I2 liées au client C1 ? On appelle ce problème le suivi de la session du client C1. Pour comprendre sa racine, examinons le schéma d&#x27;une application serveur TCP-IP servant simultanément plusieurs clients :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000396000000E8527F05EA.png" style="display:inline-block; margin:4px;width:12.144cm;height:3.069cm;" class="odt-zoomable" data-zoom-src="images/1000000000000396000000E8527F05EA.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000396000000E8527F05EA.png" width="459" height="116" style="display:inline-block; margin:4px;width:12.144cm;height:3.069cm;" class="odt-zoomable" data-zoom-src="images/1000000000000396000000E8527F05EA.png" /></td></tr></table>
 
 <p>Dans une application client-serveur TCP-IP classique :</p>
 <ul>
@@ -2250,7 +2250,7 @@
 
 <h3 id="3103-exemple-1">3.10.3. Exemple 1</h3>
 <p>Nous présentons un exemple inspiré du livre &quot;Programmation avec J2EE&quot; aux éditions Wrox et distribué par Eyrolles. Cet exemple permet de voir comment fonctionne une session PHP. La page principale est la suivante :</p>
-<p><img src="images/10000000000001F9000000DFA371E8AC.png" style="width:13.36cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F9000000DFA371E8AC.png" /></p>
+<p><img src="images/10000000000001F9000000DFA371E8AC.png" width="505" height="223" style="width:13.36cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F9000000DFA371E8AC.png" /></p>
 <p>On y trouve les éléments suivants :</p>
 <ul>
   <li>l&#x27;ID de la session obtenue par la fonction <i>session_id()</i>. Cet ID généré par le navigateur est envoyé au client par un cookie que le navigateur renvoie lorsqu&#x27;il demande une URL de la même arborescence. C&#x27;est ce qui maintient la session.
@@ -2334,16 +2334,16 @@
 </ol>
 
 <p>Rechargeons la page deux fois de suite :</p>
-<p><img src="images/100000000000015F000000B7A8734E6B.png" style="width:9.285cm;height:4.842cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015F000000B7A8734E6B.png" /></p>
+<p><img src="images/100000000000015F000000B7A8734E6B.png" width="351" height="183" style="width:9.285cm;height:4.842cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015F000000B7A8734E6B.png" /></p>
 <p>Le compteur a bien été incrémenté. L&#x27;ID de session n&#x27;a pas changé. Invalidons maintenant la session :</p>
-<p><img src="images/1000000000000111000000B006F27360.png" style="width:7.221cm;height:4.657cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000111000000B006F27360.png" /></p>
+<p><img src="images/1000000000000111000000B006F27360.png" width="273" height="176" style="width:7.221cm;height:4.657cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000111000000B006F27360.png" /></p>
 <p>On voit qu&#x27;on a perdu l&#x27;ID de la session mais que le compteur a lui été incrémenté une nouvelle fois. Rechargeons la page :</p>
-<p><img src="images/1000000000000165000000B2B2E8784D.png" style="width:9.444cm;height:4.71cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000165000000B2B2E8784D.png" /></p>
+<p><img src="images/1000000000000165000000B2B2E8784D.png" width="357" height="178" style="width:9.444cm;height:4.71cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000165000000B2B2E8784D.png" /></p>
 <p>On voit qu&#x27;on recommence avec le même ID de session que précédemment. Le compteur lui repart à zéro. La fonction <em>session_destroy()</em> n&#x27;a donc pas un effet immédiat. Les données de la session courante sont supprimées simplement pour l&#x27;échange client-serveur qui suit celui où est faite la suppression. L&#x27;ID session n&#x27;a pas changé, ce qui tendrait à montrer que <em>session_destroy()</em> ne démarre pas une nouvelle session avec création d&#x27;un nouvel ID. Le cookie du jeton de session a été renvoyé par le navigateur client et PHP a récupéré la session de ce jeton, session qui n&#x27;avait plus de données.</p>
 <p>Les tests précédents ont été réalisés avec le navigateur Netscape configuré pour utiliser les cookies. Configurons-le maintenant pour ne pas utiliser ceux-ci. Cela signifie qu&#x27;il ne stockera ni ne renverra les cookies envoyés par le serveur. On s&#x27;attend alors à ce que les sessions ne fonctionnent plus. Essayons avec un premier échange :</p>
-<p><img src="images/100000000000022F000000E25AEF955D.png" style="width:14.788cm;height:5.98cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022F000000E25AEF955D.png" /></p>
+<p><img src="images/100000000000022F000000E25AEF955D.png" width="559" height="226" style="width:14.788cm;height:5.98cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022F000000E25AEF955D.png" /></p>
 <p>On a un ID de session, celui généré par <em>session_start</em>(). Rechargeons la page avec le lien :</p>
-<p><img src="images/1000000000000302000000E35CC3B38B.png" style="width:17.986cm;height:5.302cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000302000000E35CC3B38B.png" /></p>
+<p><img src="images/1000000000000302000000E35CC3B38B.png" width="680" height="200" style="width:17.986cm;height:5.302cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000302000000E35CC3B38B.png" /></p>
 <p>De façon surprenante, les résultats ci-dessus montrent qu&#x27;on a une session en cours et que le compteur est correctement géré. Comment cela est-il possible puisque les cookies ayant été désactivés, il n&#x27;y a plus d&#x27;échange de jeton entre le serveur et le navigateur ? L&#x27;URL de la copie d&#x27;écran ci-dessus nous donne la réponse :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>http://localhost/poly/sessions/1/cycledevie.php?PHPSESSID=587ce26f943a288d8f41212e30fed13c
 </code></pre></div>
@@ -2640,60 +2640,60 @@
 
 <p>Le but du programme est d&#x27;appeler N fois l&#x27;application <em>cycledevie.php</em> en gérant le cookie de session et en affichant à chaque fois la valeur du compteur renvoyée par le serveur. A la fin des N appels, la valeur de celui-ci doit être N-1. Voici un premier exemple d&#x27;exécution :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos<span style="background-color:#ffe994">&gt;&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 3</span></span>
-<span class="odt-code-line">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- Set-Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea; path=/poly/sessions/2</span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 0]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 1]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 2]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos<span style="background-color:#ffe994">&gt;&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 3</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Set-Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea; path=/poly/sessions/2</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 0]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 1]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 06:27:48 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 2]</span></span>
 </code></pre></div>
 
 <p>Le programme affiche :</p>
@@ -2724,25 +2724,25 @@
 
 <p>Nous relançons le programme précédent en passant le jeton ci-dessus comme troisième paramètre :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos<span style="background-color:#ffe994">&gt;&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 1 2425e00d1d65c2bdcbafc1ce6244f7ea</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 06:32:03 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 3]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos<span style="background-color:#ffe994">&gt;&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 1 2425e00d1d65c2bdcbafc1ce6244f7ea</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Cookie: PHPSESSID=2425e00d1d65c2bdcbafc1ce6244f7ea</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 06:32:03 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 3]</span></span>
 </code></pre></div>
 
 <p>On voit ici que dès le 1er appel du client, le serveur reçoit un cookie de session valide. On pointe peut-être là un trou de sécurité potentiel. Si je suis capable d&#x27;intercepter sur le réseau un jeton de session, je suis alors capable de me faire passer pour celui qui avait initié celle-ci. Dans notre exemple, le premier appel (sans jeton de session) représente celui qui initie la session (peut-être avec un login et mot de passe qui vont lui donner le droit d&#x27;avoir un jeton) et le second appel (avec jeton de session) représente celui qui a &quot;piraté&quot; le jeton de session du premier appel. Si l&#x27;opération en cours est une opération bancaire cela peut devenir ennuyeux...</p>
@@ -2932,7 +2932,7 @@
   </li>
 </ul>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>            for($i=0;$i&lt;$N;$i++){
+<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a><span class="w">            </span><span class="k">for</span><span class="o">(</span><span class="nv">$i</span><span class="o">=</span><span class="m">0</span><span class="p">;</span><span class="nv">$i</span>&lt;<span class="nv">$N</span><span class="p">;</span><span class="nv">$i</span>++<span class="o">){</span>
 </code></pre></div>
 <ul>
   <li>à chaque échange, le client ouvre une connexion TCP-IP avec le serveur. Une fois celle-ci obtenue, il envoie au serveur les entêtes HTTP de sa requête :
@@ -3092,42 +3092,42 @@
 </code></pre></div>
 <p>Le client demande donc l&#x27;URL du compteur par <strong>GET URL;PHPSESSID=xx HTTP/1.1</strong> et n&#x27;envoie plus de cookie. C&#x27;est la seule modification. Voici les résultats d&#x27;un premier appel :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 2</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">--&gt; <span style="background-color:#ffe994">GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 07:21:19 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- <span style="background-color:#ffe994">Set-Cookie: PHPSESSID=573212ba82303d7903caf8944ee7a86f; path=/poly/sessions/2</span></span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 0]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">--&gt; <span style="background-color:#ffe994">GET /poly/sessions/2/cycledevie.php?PHPSESSID=573212ba82303d7903caf8944ee7a86f HTTP/1.1</span></span>
-<span class="odt-code-line">--&gt; Host: localhost:80</span>
-<span class="odt-code-line">--&gt; Connection: close</span>
-<span class="odt-code-line">--&gt;</span>
-<span class="odt-code-line">&lt;-- HTTP/1.1 200 OK</span>
-<span class="odt-code-line">&lt;-- Date: Thu, 10 Oct 2002 07:21:19 GMT</span>
-<span class="odt-code-line">&lt;-- Server: Apache/1.3.24 (Win32)</span>
-<span class="odt-code-line">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span>
-<span class="odt-code-line">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span>
-<span class="odt-code-line">&lt;-- Pragma: no-cache</span>
-<span class="odt-code-line">&lt;-- Connection: close</span>
-<span class="odt-code-line">&lt;-- Transfer-Encoding: chunked</span>
-<span class="odt-code-line">&lt;-- Content-Type: text/html</span>
-<span class="odt-code-line">&lt;--</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[Le compteur est égal à 1]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">&quot;e:\php43\php.exe&quot; clientCompteur2.php http://localhost/poly/sessions/2/cycledevie.php 2</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#ffe994">--&gt; GET /poly/sessions/2/cycledevie.php HTTP/1.1</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 07:21:19 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- <span style="background-color:#ffe994">Set-Cookie: PHPSESSID=573212ba82303d7903caf8944ee7a86f; path=/poly/sessions/2</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 0]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#ffe994">--&gt; GET /poly/sessions/2/cycledevie.php?PHPSESSID=573212ba82303d7903caf8944ee7a86f HTTP/1.1</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Host: localhost:80</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt; Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- HTTP/1.1 200 OK</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Date: Thu, 10 Oct 2002 07:21:19 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Server: Apache/1.3.24 (Win32)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Expires: Thu, 19 Nov 1981 08:52:00 GMT</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Pragma: no-cache</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Connection: close</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Transfer-Encoding: chunked</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;-- Content-Type: text/html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;--</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Le compteur est égal à 1]</span></span>
 </code></pre></div>
 
 <p>Lors du premier appel le client demande l&#x27;URL sans jeton de session. Le serveur lui répond en lui envoyant le jeton. Le client réinterroge alors la même URL en adjoignant le jeton reçu à celle-ci. On voit que le compteur est bien incrémenté preuve que le serveur a bien reconnu qu&#x27;il s&#x27;agissait de la même session.</p>
@@ -3153,19 +3153,19 @@
 </ul>
 
 <p>La page <strong>page1</strong> obtenue au premier échange est la suivante :</p>
-<p><img src="images/10000000000001E5000000B6A0D1516E.png" style="width:12.831cm;height:4.815cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E5000000B6A0D1516E.png" /></p>
+<p><img src="images/10000000000001E5000000B6A0D1516E.png" width="485" height="182" style="width:12.831cm;height:4.815cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E5000000B6A0D1516E.png" /></p>
 <p>On remplit le champ du nom :</p>
-<p><img src="images/10000000000001E9000000BE7A2BDDE4.png" style="width:12.936cm;height:5.027cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E9000000BE7A2BDDE4.png" /></p>
+<p><img src="images/10000000000001E9000000BE7A2BDDE4.png" width="489" height="190" style="width:12.936cm;height:5.027cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E9000000BE7A2BDDE4.png" /></p>
 <p>On utilise le bouton [Suite] et on obtient alors la page <strong>page2</strong> suivante :</p>
-<p><img src="images/10000000000001E1000000D0BCC56CC8.png" style="width:12.725cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E1000000D0BCC56CC8.png" /></p>
+<p><img src="images/10000000000001E1000000D0BCC56CC8.png" width="481" height="208" style="width:12.725cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E1000000D0BCC56CC8.png" /></p>
 <p>On remplit le champ de l&#x27;âge :</p>
-<p><img src="images/10000000000001E5000000D32677993A.png" style="width:12.831cm;height:5.583cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E5000000D32677993A.png" /></p>
+<p><img src="images/10000000000001E5000000D32677993A.png" width="485" height="211" style="width:12.831cm;height:5.583cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E5000000D32677993A.png" /></p>
 <p>On utilise le bouton [Suite] et on obtient alors la page <strong>page3</strong> suivante :</p>
-<p><img src="images/1000000000000202000000B2B1A1EBE6.png" style="width:13.598cm;height:4.71cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000202000000B2B1A1EBE6.png" /></p>
+<p><img src="images/1000000000000202000000B2B1A1EBE6.png" width="514" height="178" style="width:13.598cm;height:4.71cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000202000000B2B1A1EBE6.png" /></p>
 <p>Lorsqu&#x27;on soumet la page <strong>page1</strong> au serveur, celui-ci peut la renvoyer avec un code d&#x27;erreur si le nom est vide :</p>
-<p><img src="images/10000000000001ED00000118A4A79F60.png" style="width:13.042cm;height:7.407cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001ED00000118A4A79F60.png" /></p>
+<p><img src="images/10000000000001ED00000118A4A79F60.png" width="493" height="280" style="width:13.042cm;height:7.407cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001ED00000118A4A79F60.png" /></p>
 <p>Lorsqu&#x27;on soumet la page <strong>page2</strong> au serveur, celui-ci peut la renvoyer avec un code d&#x27;erreur si l&#x27;âge est invalide :</p>
-<p><img src="images/10000000000001EA0000012B2AE1B0CB.png" style="width:12.963cm;height:7.909cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EA0000012B2AE1B0CB.png" /></p>
+<p><img src="images/10000000000001EA0000012B2AE1B0CB.png" width="490" height="299" style="width:12.963cm;height:7.909cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EA0000012B2AE1B0CB.png" /></p>
 <p>L&#x27;application est composée de six programmes :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>etape1.php
@@ -3501,13 +3501,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>

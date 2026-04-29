@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -680,56 +680,56 @@
 <p>ce qui donne l&#x27;impôt I=0.65*R - 49062*nbParts.</p>
 <p>Les données définissant les différentes tranches d&#x27;impôt sont dans une base de données ODBC-MySQL. MySQL est un SGBD du domaine public utilisable sur différentes plate-formes dont Windows et Linux. Avec ce SGBD, une base de données <strong>dbimpots</strong> a été créée avec dedans une unique table appelée <strong>impots</strong>. L&#x27;accès à la base est contrôlé par un login/motdepasse ici <strong>admimpots/mdpimpots</strong>. La copie d&#x27;écran suivante montre comment utiliser la base <strong>dbimpots</strong> avec MySQL :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-sql">
-<span class="odt-code-line">C:\Program Files\EasyPHP\mysql\bin&gt;<span style="font-weight:bold;background-color:#ffe994">mysql -u admimpots -p</span></span>
-<span class="odt-code-line">Enter password: *********</span>
-<span class="odt-code-line">Welcome to the MySQL monitor.  Commands end with ; or \g.</span>
-<span class="odt-code-line">Your MySQL connection id is 18 to server version: 3.23.49-max-nt</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Type &#x27;help;&#x27; or &#x27;\h&#x27; for help. Type &#x27;\c&#x27; to clear the buffer.</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">use dbimpots;</span></span>
-<span class="odt-code-line">Database changed</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">show tables;</span></span>
-<span class="odt-code-line">+--------------------+</span>
-<span class="odt-code-line">| Tables_in_dbimpots |</span>
-<span class="odt-code-line">+--------------------+</span>
-<span class="odt-code-line">| impots             |</span>
-<span class="odt-code-line">+--------------------+</span>
-<span class="odt-code-line">1 row in set (0.00 sec)</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">describe impots;</span></span>
-<span class="odt-code-line">+---------+--------+------+-----+---------+-------+</span>
-<span class="odt-code-line">| Field   | Type   | Null | Key | Default | Extra |</span>
-<span class="odt-code-line">+---------+--------+------+-----+---------+-------+</span>
-<span class="odt-code-line">| limites | double | YES  |     | NULL    |       |</span>
-<span class="odt-code-line">| coeffR  | double | YES  |     | NULL    |       |</span>
-<span class="odt-code-line">| coeffN  | double | YES  |     | NULL    |       |</span>
-<span class="odt-code-line">+---------+--------+------+-----+---------+-------+</span>
-<span class="odt-code-line">3 rows in set (0.02 sec)</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">select * from impots;</span></span>
-<span class="odt-code-line">+---------+--------+---------+</span>
-<span class="odt-code-line">| limites | coeffR | coeffN  |</span>
-<span class="odt-code-line">+---------+--------+---------+</span>
-<span class="odt-code-line">|   12620 |      0 |       0 |</span>
-<span class="odt-code-line">|   13190 |   0.05 |     631 |</span>
-<span class="odt-code-line">|   15640 |    0.1 |  1290.5 |</span>
-<span class="odt-code-line">|   24740 |   0.15 |  2072.5 |</span>
-<span class="odt-code-line">|   31810 |    0.2 |  3309.5 |</span>
-<span class="odt-code-line">|   39970 |   0.25 |    4900 |</span>
-<span class="odt-code-line">|   48360 |    0.3 |    6898 |</span>
-<span class="odt-code-line">|   55790 |   0.35 |  9316.5 |</span>
-<span class="odt-code-line">|   92970 |    0.4 |   12106 |</span>
-<span class="odt-code-line">|  127860 |   0.45 |   16754 |</span>
-<span class="odt-code-line">|  151250 |    0.5 | 23147.5 |</span>
-<span class="odt-code-line">|  172040 |   0.55 |   30710 |</span>
-<span class="odt-code-line">|  195000 |    0.6 |   39312 |</span>
-<span class="odt-code-line">|       0 |   0.65 |   49062 |</span>
-<span class="odt-code-line">+---------+--------+---------+</span>
-<span class="odt-code-line">14 rows in set (0.00 sec)</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">mysql&gt;<span style="background-color:#ffe994">quit</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">C:\Program Files\EasyPHP\mysql\bin&gt;<span style="font-weight:bold;background-color:#ffe994">mysql -u admimpots -p</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Enter password: *********</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Welcome to the MySQL monitor.  Commands end with ; or \g.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Your MySQL connection id is 18 to server version: 3.23.49-max-nt</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Type &#x27;help;&#x27; or &#x27;\h&#x27; for help. Type &#x27;\c&#x27; to clear the buffer.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">use dbimpots;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Database changed</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">show tables;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| Tables_in_dbimpots |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| impots             |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+--------------------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">1 row in set (0.00 sec)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">describe impots;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| Field   | Type   | Null | Key | Default | Extra |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| limites | double | YES  |     | NULL    |       |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| coeffR  | double | YES  |     | NULL    |       |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| coeffN  | double | YES  |     | NULL    |       |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+------+-----+---------+-------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">3 rows in set (0.02 sec)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt; <span style="font-weight:bold;background-color:#ffe994">select * from impots;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+---------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">| limites | coeffR | coeffN  |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+---------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   12620 |      0 |       0 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   13190 |   0.05 |     631 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   15640 |    0.1 |  1290.5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   24740 |   0.15 |  2072.5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   31810 |    0.2 |  3309.5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   39970 |   0.25 |    4900 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   48360 |    0.3 |    6898 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   55790 |   0.35 |  9316.5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|   92970 |    0.4 |   12106 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|  127860 |   0.45 |   16754 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|  151250 |    0.5 | 23147.5 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|  172040 |   0.55 |   30710 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|  195000 |    0.6 |   39312 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">|       0 |   0.65 |   49062 |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">+---------+--------+---------+</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">14 rows in set (0.00 sec)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">mysql&gt;<span style="background-color:#ffe994">quit</span></span></span>
 </code></pre></div>
 
 <p>La base de données <em>dbimpots</em> est transformée en source de données ODBC de la façon suivante :</p>
@@ -738,19 +738,19 @@
   </li>
 </ul>
 
-<p><img src="images/10000000000001CA000000A7EA9ED477.png" style="width:12.116cm;height:4.419cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CA000000A7EA9ED477.png" /></p>
+<p><img src="images/10000000000001CA000000A7EA9ED477.png" width="458" height="167" style="width:12.116cm;height:4.419cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CA000000A7EA9ED477.png" /></p>
 <ul>
   <li>on utilise le bouton [Add] pour ajouter une nouvelle source de données ODBC
   </li>
 </ul>
 
-<p><img src="images/10000000000001D4000001566FD948CF.png" style="width:12.381cm;height:9.047cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D4000001566FD948CF.png" /></p>
+<p><img src="images/10000000000001D4000001566FD948CF.png" width="468" height="342" style="width:12.381cm;height:9.047cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D4000001566FD948CF.png" /></p>
 <ul>
   <li>on désigne le pilote MySQL et on fait [Terminer]
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F600000238CD1A9E77.png" style="display:inline-block; margin:4px;width:13.414cm;height:7.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F600000238CD1A9E77.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F600000238CD1A9E77.png" width="507" height="284" style="display:inline-block; margin:4px;width:13.414cm;height:7.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F600000238CD1A9E77.png" /></td></tr></table>
 
 <ul>
   <li>le pilote MySQL demande un certain nombre de renseignements :
@@ -994,20 +994,20 @@
 
 <p>Les résultats obtenus sont les suivants :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe test.php</span></span>
-<span class="odt-code-line">impots(oui,2,200000)</span>
-<span class="odt-code-line">montant=22504</span>
-<span class="odt-code-line">impots(non,2,200000)</span>
-<span class="odt-code-line">montant=33388</span>
-<span class="odt-code-line">impots(oui,3,200000)</span>
-<span class="odt-code-line">montant=16400</span>
-<span class="odt-code-line">impots(non,3,200000)</span>
-<span class="odt-code-line">montant=22504</span>
-<span class="odt-code-line">impots(Array,Array,Array)</span>
-<span class="odt-code-line">Les erreurs suivantes se sont produites :</span>
-<span class="odt-code-line">Statut marital [array] incorrect</span>
-<span class="odt-code-line">Nombre d&#x27;enfants [Array] incorrect</span>
-<span class="odt-code-line">salaire [Array] incorrect</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe test.php</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">impots(oui,2,200000)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">montant=22504</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">impots(non,2,200000)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">montant=33388</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">impots(oui,3,200000)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">montant=16400</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">impots(non,3,200000)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">montant=22504</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">impots(Array,Array,Array)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Les erreurs suivantes se sont produites :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Statut marital [array] incorrect</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Nombre d&#x27;enfants [Array] incorrect</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">salaire [Array] incorrect</span></span>
 </code></pre></div>
 
 <p>Nous utiliserons désormais la classe <em>ImpotsDSN</em> sans en redonner la définition.</p>
@@ -1022,7 +1022,7 @@
   </li>
 </ul>
 
-<p><img src="images/100000000000012F000000C7915EC041.png" style="width:8.015cm;height:5.265cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012F000000C7915EC041.png" /></p>
+<p><img src="images/100000000000012F000000C7915EC041.png" width="303" height="199" style="width:8.015cm;height:5.265cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012F000000C7915EC041.png" /></p>
 <p>L&#x27;affichage du formulaire est réalisé par la page PHP suivante :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">&lt;?php</span> <span class="c1">//formulaire des impôts ?&gt;</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
@@ -1283,11 +1283,11 @@
 <a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="x">&lt;/html&gt;</span>
 </code></pre></div>
 <p>Voici quelques exemples d&#x27;erreurs. Tout d&#x27;abord on fournit un mot de passe incorrect à la base :</p>
-<p><img src="images/100000000000020700000113D1D1402F.png" style="width:13.73cm;height:7.274cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020700000113D1D1402F.png" /></p>
+<p><img src="images/100000000000020700000113D1D1402F.png" width="519" height="275" style="width:13.73cm;height:7.274cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020700000113D1D1402F.png" /></p>
 <p>On fournit des données incorrectes dans le formulaire :</p>
-<p><img src="images/10000000000002850000017B628C86AE.png" style="width:17.064cm;height:10.026cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002850000017B628C86AE.png" /></p>
+<p><img src="images/10000000000002850000017B628C86AE.png" width="645" height="379" style="width:17.064cm;height:10.026cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002850000017B628C86AE.png" /></p>
 <p>Enfin, on fournit des valeurs correctes :</p>
-<p><img src="images/10000000000001A20000010022F6A4D7.png" style="width:11.058cm;height:6.773cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A20000010022F6A4D7.png" /></p>
+<p><img src="images/10000000000001A20000010022F6A4D7.png" width="418" height="256" style="width:11.058cm;height:6.773cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A20000010022F6A4D7.png" /></p>
 <h2 id="44-application-impots-version-2">4.4. Application Impôts : version 2</h2>
 <p>Dans l&#x27;exemple précédent, la validité des paramètres <em>txtEnfants</em>, <em>txtSalaire</em> du formulaire est vérifiée par le serveur. On se propose ici de la vérifier par un script Javascript inclus dans la page du formulaire. C&#x27;est alors le navigateur qui fait la vérification des paramètres. Le serveur n&#x27;est alors sollicité que si ceux-ci sont valides. On économise ainsi de la &quot;bande passante&quot;. La page <em>impots-form.php</em> d&#x27;affichage devient la suivante :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">&lt;?php</span> <span class="c1">//formulaire des impôts ?&gt;</span>
@@ -1342,10 +1342,10 @@
 </ul>
 
 <p>Voici un exemple d&#x27;affichage en cas d&#x27;erreur :</p>
-<p><img src="images/100000000000019000000147AFDFBB98.png" style="width:10.582cm;height:8.65cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019000000147AFDFBB98.png" /></p>
+<p><img src="images/100000000000019000000147AFDFBB98.png" width="400" height="327" style="width:10.582cm;height:8.65cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019000000147AFDFBB98.png" /></p>
 <h2 id="45-application-impots-version-3">4.5. Application Impôts : version 3</h2>
 <p>Nous modifions légèrement l&#x27;application pour y introduire la notion de session. Nous considérons maintenant que l&#x27;application est une application de simulation de calcul d&#x27;impôts. Un utilisateur peut alors simuler différentes &quot;configurations&quot; de contribuable et voir quelle serait pour chacune d&#x27;elles l&#x27;impôt à payer. La page web ci-dessous donne un exemple de ce qui pourrait être obtenu :</p>
-<p><img src="images/1000000000000268000001E50627D14F.png" style="width:16.297cm;height:12.831cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000268000001E50627D14F.png" /></p>
+<p><img src="images/1000000000000268000001E50627D14F.png" width="616" height="485" style="width:16.297cm;height:12.831cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000268000001E50627D14F.png" /></p>
 <p>Le programme d&#x27;affichage de la page ci-dessus est le suivant :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cp">&lt;?php</span> <span class="c1">//formulaire des impôts ?&gt;</span>
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
@@ -1712,8 +1712,8 @@
 <h2 id="46-application-impots-version-4">4.6. Application Impôts : version 4</h2>
 <p>Nous allons maintenant créer une application autonome qui sera un client web de l&#x27;application web <em>impots</em> précédente. L&#x27;application sera une application console lancée à partir d&#x27;une fenêtre DOS :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php</span></span>
-<span class="odt-code-line">Syntaxe cltImpots.php urlImpots marié enfants salaire [jeton]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Syntaxe cltImpots.php urlImpots marié enfants salaire [jeton]</span></span>
 </code></pre></div>
 
 <p>Les paramètres du client web <strong>cltImpots</strong> sont les suivants :</p>
@@ -1725,35 +1725,35 @@
 </code></pre></div>
 <p>Voici quelques exemples d&#x27;utilisation. Tout d&#x27;abord un premier exemple sans jeton de session.</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php http://localhost/poly/impots/6/impots.php oui 2 200000</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Jeton de session=[a6297317667bc981c462120987b8dd18]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Simulations :</span>
-<span class="odt-code-line">[Marié,Enfants,Salaire annuel (F),Impôts à payer (F)]</span>
-<span class="odt-code-line">[oui,2,200000,22504]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php http://localhost/poly/impots/6/impots.php oui 2 200000</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[a6297317667bc981c462120987b8dd18]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Simulations :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Marié,Enfants,Salaire annuel (F),Impôts à payer (F)]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,2,200000,22504]</span></span>
 </code></pre></div>
 
 <p>Nous avons bien récupéré le montant de l&#x27;impôt à payer (22504 f). Nous avons également récupéré le jeton de session. Nous pouvons maintenant l&#x27;utiliser pour une seconde interrogation :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php http://localhost/poly/impots/6/impots.php oui 3 200000 a6297317667bc981c462120987b8dd18</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Jeton de session=[a6297317667bc981c462120987b8dd18]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Simulations :</span>
-<span class="odt-code-line">[Marié,Enfants,Salaire annuel (F),Impôts à payer (F)]</span>
-<span class="odt-code-line">[oui,2,200000,22504]</span>
-<span class="odt-code-line">[oui,3,200000,16400]</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots.php http://localhost/poly/impots/6/impots.php oui 3 200000 a6297317667bc981c462120987b8dd18</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[a6297317667bc981c462120987b8dd18]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Simulations :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[Marié,Enfants,Salaire annuel (F),Impôts à payer (F)]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,2,200000,22504]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[oui,3,200000,16400]</span></span>
 </code></pre></div>
 
 <p>Nous obtenons bien le tableau des simulations envoyées par le serveur web. Le jeton récupéré reste bien sûr le même. Si nous interrogeons le service web alors que la base de données n&#x27;a pas été lancée, nous obtenons le résultat suivant :</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots2.php http://localhost/poly/impots/6/impots.php oui 3 200000</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Jeton de session=[8369014d5053212bc42f64bbdfb152ee]</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Les erreurs suivantes se sont produites :</span>
-<span class="odt-code-line">Impossible d&#x27;ouvrir la base DSN [mysql-dbimpots] (S1000)</span>
+<span class="odt-code-line"><span class="odt-code-line-content">dos&gt;<span style="background-color:#ffe994">e:\php43\php.exe cltImpots2.php http://localhost/poly/impots/6/impots.php oui 3 200000</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Jeton de session=[8369014d5053212bc42f64bbdfb152ee]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Les erreurs suivantes se sont produites :</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Impossible d&#x27;ouvrir la base DSN [mysql-dbimpots] (S1000)</span></span>
 </code></pre></div>
 
 <p>Lorsqu&#x27;on écrit un client web programmé, il est nécessaire de savoir exactement ce qu&#x27;envoie le serveur en réponse aux différentes demandes possibles d&#x27;un client. Le serveur envoie un ensemble de lignes HTML comprenant des informations utiles et d&#x27;autres qui ne sont là que pour la mise en page HTML. Les expressions régulières de PHP peuvent nous aider à trouver les informations utiles dans le flot des lignes envoyées par le serveur. Pour cela, nous avons besoin de connaître le format exact des différentes réponses du serveur. Pour cela, nous pouvons interroger le service web avec un navigateur et regarder le code source qui a été envoyé. On notera que cette méthode ne permet pas de connaître les entêtes HTTP de la réponse du serveur web. Il est parfois utile de connaître ceux-ci. On peut alors utiliser l&#x27;un des deux clients web génériques vus dans le chapitre précédent.</p>
@@ -1766,13 +1766,13 @@
 <a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>C&#x27;est une table HTML, la seule dans le document envoyé. Ainsi l&#x27;expression régulière <em>&quot;|</em><em><mark style="background-color: #fff5ce">&lt;tr&gt;\s*&lt;td&gt;(.+?)&lt;/td&gt;\s*&lt;td&gt;(.+?)&lt;/td&gt;\s*&lt;td&gt;(.+?)&lt;/td&gt;\s*&lt;td&gt;(.+?)&lt;/td&gt;\s*&lt;/tr&gt;</mark></em><em>|&quot;</em> doit-elle permettre de retrouver dans le document les différentes simulations reçues. Lorsque la base de données est indisponible, on reçoit le document suivant :</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>    Application indisponible. Recommencez ultérieurement.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>           Les erreurs suivantes se sont produites<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Impossible d&#39;ouvrir la base DSN [mysql-dbimpots] (S1000)<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>    <span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>    Application indisponible. Recommencez ultérieurement.&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    &lt;font color=&quot;red&quot;&gt;
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>           Les erreurs suivantes se sont produites&lt;br&gt;
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>        &lt;ul&gt;
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>      &lt;li&gt;Impossible d&#39;ouvrir la base DSN [mysql-dbimpots] (S1000)&lt;/li&gt;
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>        &lt;/ul&gt;
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>    &lt;/font&gt;
 </code></pre></div>
 <p>Pour récupérer l&#x27;erreur, le client web devra chercher dans la réponse du serveur web les lignes correspondant au modèle : <em>&quot;|&lt;li&gt;(.+?)&lt;/li&gt;|&quot;</em>. </p>
 <p>Nous avons maintenant les lignes directrices de ce qu&#x27;il faut faire lorsque l&#x27;utilisateur demande le calcul de l&#x27;impôt à partir du client console précédent :</p>
@@ -2291,10 +2291,10 @@
 </code></pre></div>
 <p>Supposons maintenant que le concepteur de l&#x27;application change l&#x27;apparence visuelle de la réponse en mettant les simulations non pas dans un tableau mais dans une liste sous la forme :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Résultat des simulations
-<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>oui,2,200000,22504
-<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>non,2,200000,33388
-<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>  
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>&lt;ul&gt;
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>    &lt;li&gt;oui,2,200000,22504
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>  &lt;li&gt;non,2,200000,33388
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>&lt;/ul&gt;  
 </code></pre></div>
 <p>Dans ce cas, notre client web devra être réécrit. C&#x27;est là, la menace permanente pesant sur les clients web d&#x27;applications qu&#x27;on ne maîtrise pas soi-même. XML peut apporter une solution à ce problème :</p>
 <ul>
@@ -2351,13 +2351,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>
